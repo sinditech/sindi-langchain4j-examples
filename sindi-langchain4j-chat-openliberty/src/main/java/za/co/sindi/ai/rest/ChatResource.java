@@ -21,7 +21,6 @@ public class ChatResource {
 	private Assistant assistant;
 	
 	@GET
-//	@Path("/count")
 	@Operation(
 	        summary = "Chat to our friendly assistant."
 //	        ,description = "Returns the total numbers of users in the repository."
