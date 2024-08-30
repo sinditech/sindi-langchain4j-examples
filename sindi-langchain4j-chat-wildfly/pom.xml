@@ -35,7 +35,7 @@
 		
 		<dependency>
 			<groupId>za.co.sindi</groupId>
-			<artifactId>sindi-langchain4j-jakartaee</artifactId>
+			<artifactId>sindi-langchain4j-jakartaee-portable-extension</artifactId>
 		</dependency>
 		
 		<dependency>

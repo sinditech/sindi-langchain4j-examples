@@ -56,7 +56,13 @@
 			
 			<dependency>
 				<groupId>za.co.sindi</groupId>
-				<artifactId>sindi-langchain4j-jakartaee</artifactId>
+				<artifactId>sindi-langchain4j-jakartaee-core</artifactId>
+				<version>${sindi-langchain4j.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>za.co.sindi</groupId>
+				<artifactId>sindi-langchain4j-jakartaee-portable-extension</artifactId>
 				<version>${sindi-langchain4j.version}</version>
 			</dependency>
 			

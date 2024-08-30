@@ -20,7 +20,7 @@ public class DefaultHuggingFaceConfig implements HuggingFaceChatLanguageConfig, 
 	@Override
 	public String getAccessToken() {
 		// TODO Auto-generated method stub
-		return "<ENTER YOUR ACCESS TOKEN HERE, OR INJECT YOUR MICROPROFILE CONFIG HERE>";
+		return "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";
 	}
 
 	/* (non-Javadoc)

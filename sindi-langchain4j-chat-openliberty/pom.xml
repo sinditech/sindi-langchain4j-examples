@@ -19,6 +19,17 @@
 			</roles>
 		</developer>
 	</developers>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>za.co.sindi</groupId>
+				<artifactId>sindi-langchain4j-features-bom</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/jakarta.platform/jakarta.jakartaee-api -->
@@ -35,7 +46,24 @@
 		
 		<dependency>
 			<groupId>za.co.sindi</groupId>
-			<artifactId>sindi-langchain4j-jakartaee</artifactId>
+			<artifactId>sindi-langchain4j-jakartaee-core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!--
+		<dependency>
+			<groupId>za.co.sindi</groupId>
+			<artifactId>sindi-langchain4j-jakartaee-portable-extension</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		-->
+		
+		<dependency>
+			<groupId>za.co.sindi</groupId>
+			<artifactId>sindi-langchain4j-feature</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>pom</type>
+			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
@@ -52,7 +80,7 @@
 				<plugin>
 					<groupId>io.openliberty.tools</groupId>
 					<artifactId>liberty-maven-plugin</artifactId>
-					<version>3.10</version>
+					<version>3.10.3</version>
 					<configuration>
 						<runtimeArtifact>
 							<groupId>io.openliberty</groupId>
