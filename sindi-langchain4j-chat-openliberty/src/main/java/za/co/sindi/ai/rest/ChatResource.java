@@ -18,6 +18,7 @@ import za.co.sindi.ai.service.langchain4j.Assistant;
 public class ChatResource {
 
 	@Inject
+//	private Instance<Assistant> assistant;
 	private Assistant assistant;
 	
 	@GET
@@ -27,6 +28,7 @@ public class ChatResource {
 	        )
 	@Produces(MediaType.TEXT_PLAIN)
 	public String chat(@QueryParam("message") String message) {
+//        return assistant.get().chat(message);
         return assistant.chat(message);
     }
 }
