@@ -20,6 +20,11 @@
 		</developer>
 	</developers>
 	
+	<properties>
+		<!--Strictly for OpenLiberty-->
+		<liberty.env.ENGINE_CACHE_DIR>${project.build.directory}/liberty/wlp/usr/shared/resources/lib/</liberty.env.ENGINE_CACHE_DIR>
+	</properties>
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -55,13 +60,17 @@
 		<dependency>
 			<groupId>za.co.sindi</groupId>
 			<artifactId>sindi-langchain4j-jakartaee-core</artifactId>
+			<!--
 			<scope>provided</scope>
+			-->
 		</dependency>
 		
 		<dependency>
 			<groupId>za.co.sindi</groupId>
 			<artifactId>sindi-langchain4j-jakartaee-portable-extension</artifactId>
+			<!-- 
 			<scope>provided</scope>
+			-->
 		</dependency>
 		
 		<dependency>
@@ -85,6 +94,17 @@
 			<groupId>za.co.sindi</groupId>
 			<artifactId>sindi-langchain4j-hugging-face-jakartaee</artifactId>
 		</dependency>
+		
+		<dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-embeddings-all-minilm-l6-v2</artifactId>
+        </dependency>
+    
+        <!-- https://mvnrepository.com/artifact/ai.djl.huggingface/tokenizers -->
+		<dependency>
+		    <groupId>ai.djl.huggingface</groupId>
+		    <artifactId>tokenizers</artifactId>
+		</dependency>
 	</dependencies>
 	
 	<build>
@@ -97,14 +117,17 @@
 					<artifactId>liberty-maven-plugin</artifactId>
 					<version>3.10.3</version>
 					<configuration>
+						<!--
 						<runtimeArtifact>
 							<groupId>io.openliberty</groupId>
 							<artifactId>openliberty-runtime</artifactId>
 							<version>24.0.0.8</version>
 							<type>zip</type>
 						</runtimeArtifact>
+						-->
 						<bootstrapProperties>
 							<project.name>${project.build.finalName}</project.name>
+							<docragdir>${project.basedir}/docs-for-rag</docragdir>
 						</bootstrapProperties>
 					</configuration>
 				</plugin>

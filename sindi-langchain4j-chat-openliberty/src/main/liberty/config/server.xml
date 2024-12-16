@@ -6,8 +6,10 @@
     	<!-- Eclipse Microprofile 6.1 -->
     	<!-- See details here: https://openliberty.io/docs/ref/feature/#microProfile-6.1.html -->
     	<feature>microProfile-6.1</feature>
+    	<!--
     	<acceptLicense>true</acceptLicense>
   		<feature>usr:microprofile-llm-1.0</feature>
+  		-->
   		<!--
   		<feature>usr:mpLLM-1.0</feature>
   		-->
@@ -16,10 +18,15 @@
     <variable name="default.http.port" defaultValue="9080"/>
     <variable name="default.https.port" defaultValue="9443"/>
 
-    <webApplication location="sindi-langchain4j-chat-openliberty.war" contextRoot="/" />
+    <webApplication location="sindi-langchain4j-chat-openliberty.war" contextRoot="/">
+    	<appProperties>
+     		<property name="app.docs-for-rag.dir" value="${docragdir}"/>
+  		</appProperties>
+    </webApplication>
     <mpMetrics authentication="false"/>
     
-    <applicationMonitor dropinsEnabled="false"/>
+    <applicationMonitor dropinsEnabled="false"
+    					updateTrigger="mbean" />
 
     <logging traceSpecification="com.ibm.ws.microprofile.health.*=all" />
 
