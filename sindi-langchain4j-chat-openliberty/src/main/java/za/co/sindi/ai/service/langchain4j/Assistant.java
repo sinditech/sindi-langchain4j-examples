@@ -1,7 +1,7 @@
 package za.co.sindi.ai.service.langchain4j;
 
 import dev.langchain4j.service.SystemMessage;
-import dev.langchain4j.service.sindi.AiService;
+import za.co.sindi.langchain4j.spi.cdi.AiService;
 
 /**
  * @author Buhake Sindi
