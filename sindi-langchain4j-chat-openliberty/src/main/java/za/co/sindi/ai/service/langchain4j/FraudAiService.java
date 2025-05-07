@@ -9,9 +9,9 @@ import org.eclipse.microprofile.faulttolerance.Timeout;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.V;
-import dev.langchain4j.service.sindi.AiService;
+import za.co.sindi.langchain4j.spi.cdi.AiService;
 
-@AiService(chatMemoryMaxMessages = 5) //, chatModel = "chat-model"
+@AiService //(chatMemoryMaxMessages = 5, chatModel = "chat-model")
 public interface FraudAiService {
 
     @SystemMessage("""

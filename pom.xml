@@ -20,7 +20,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
-		<dev.langchain4j.version>0.36.2</dev.langchain4j.version>
+		<dev.langchain4j.version>1.0.0-rc1</dev.langchain4j.version>
+		<dev.langchain4j.parent-bom.version>1.0.0-beta4</dev.langchain4j.parent-bom.version>
 		<sindi-langchain4j.version>0.0.1-SNAPSHOT</sindi-langchain4j.version>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
@@ -76,14 +77,14 @@
 	        <dependency>
 	            <groupId>dev.langchain4j</groupId>
 	            <artifactId>langchain4j-embeddings-all-minilm-l6-v2</artifactId>
-	            <version>${dev.langchain4j.version}</version>
+	            <version>${dev.langchain4j.parent-bom.version}</version>
 	        </dependency>
         
 	        <!-- https://mvnrepository.com/artifact/ai.djl.huggingface/tokenizers -->
 			<dependency>
 			    <groupId>ai.djl.huggingface</groupId>
 			    <artifactId>tokenizers</artifactId>
-			    <version>0.30.0</version>
+			    <version>0.32.0</version>
 			</dependency>
 			
 			<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
