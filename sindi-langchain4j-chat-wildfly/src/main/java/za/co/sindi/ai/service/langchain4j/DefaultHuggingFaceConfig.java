@@ -4,7 +4,7 @@ import java.time.Duration;
 
 import dev.langchain4j.model.huggingface.HuggingFaceModelName;
 import jakarta.enterprise.context.ApplicationScoped;
-import za.co.sindi.langchain4j.service.huggingface.HuggingFaceChatLanguageConfig;
+import za.co.sindi.langchain4j.service.huggingface.HuggingFaceChatConfig;
 import za.co.sindi.langchain4j.service.huggingface.HuggingFaceEmbeddingConfig;
 
 /**
@@ -12,7 +12,7 @@ import za.co.sindi.langchain4j.service.huggingface.HuggingFaceEmbeddingConfig;
  * @since 10 August 2024
  */
 @ApplicationScoped
-public class DefaultHuggingFaceConfig implements HuggingFaceChatLanguageConfig, HuggingFaceEmbeddingConfig {
+public class DefaultHuggingFaceConfig implements HuggingFaceChatConfig, HuggingFaceEmbeddingConfig {
 
 	/* (non-Javadoc)
 	 * @see za.co.sindi.langchain4j.service.huggingface.HuggingFaceConfig#getAccessToken()
@@ -20,7 +20,7 @@ public class DefaultHuggingFaceConfig implements HuggingFaceChatLanguageConfig, 
 	@Override
 	public String getAccessToken() {
 		// TODO Auto-generated method stub
-		return "<ADD YOUR ACCESS TOKEN HERE>";
+		return "";
 	}
 
 	/* (non-Javadoc)
