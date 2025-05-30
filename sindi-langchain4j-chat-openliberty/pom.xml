@@ -33,14 +33,6 @@
 				<version>0.0.1-SNAPSHOT</version>
 				<type>pom</type>
 			</dependency>
-			<!--
-			<dependency>
-				<groupId>io.smallrye.llm.liberty-bundle</groupId>
-				<artifactId>smallrye-llm-langchain4j-features-bom</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
-				<type>pom</type>
-			</dependency>
-			-->
 		</dependencies>
 	</dependencyManagement>
 
@@ -80,16 +72,6 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!--
-		<dependency>
-			<groupId>io.smallrye.llm.liberty-bundle</groupId>
-			<artifactId>smallrye-llm-langchain4j-feature</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-			<type>pom</type>
-			<scope>provided</scope>
-		</dependency>
-		-->
 		<dependency>
 			<groupId>za.co.sindi</groupId>
 			<artifactId>sindi-langchain4j-cdi-hugging-face</artifactId>
