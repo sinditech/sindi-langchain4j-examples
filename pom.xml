@@ -58,19 +58,19 @@
 			
 			<dependency>
 				<groupId>za.co.sindi</groupId>
-				<artifactId>sindi-langchain4j-cdi</artifactId>
+				<artifactId>sindi-langchain4j-spi</artifactId>
 				<version>${sindi-langchain4j.version}</version>
 			</dependency>
 			
 			<dependency>
 				<groupId>za.co.sindi</groupId>
-				<artifactId>sindi-langchain4j-cdi-portable-extension</artifactId>
+				<artifactId>sindi-langchain4j-portable-extension</artifactId>
 				<version>${sindi-langchain4j.version}</version>
 			</dependency>
 			
 			<dependency>
 				<groupId>za.co.sindi</groupId>
-				<artifactId>sindi-langchain4j-cdi-hugging-face</artifactId>
+				<artifactId>sindi-langchain4j-hugging-face</artifactId>
 				<version>${sindi-langchain4j.version}</version>
 			</dependency>
 			
