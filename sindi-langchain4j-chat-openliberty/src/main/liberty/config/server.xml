@@ -3,9 +3,9 @@
     	<!-- Jakarta EE 10.0 Feature -->
     	<!-- See details here: https://openliberty.io/docs/ref/feature/#jakartaee-10.0.html -->
     	<feature>jakartaee-10.0</feature>
-    	<!-- Eclipse Microprofile 6.1 -->
-    	<!-- See details here: https://openliberty.io/docs/ref/feature/#microProfile-6.1.html -->
-    	<feature>microProfile-6.1</feature>
+    	<!-- Eclipse Microprofile 7.1 -->
+    	<!-- See details here: https://openliberty.io/docs/ref/feature/#microProfile-7.1.html -->
+    	<feature>microProfile-7.1</feature>
     	<!--
     	<acceptLicense>true</acceptLicense>
   		<feature>usr:microprofile-llm-1.0</feature>
